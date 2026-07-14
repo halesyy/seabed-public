@@ -26,4 +26,4 @@ def test_destructive_command_requires_confirmation() -> None:
     result = runner.invoke(app, ["delete", "document-1"])
 
     assert result.exit_code != 0
-    assert "--yes" in result.output
+    assert "Deletion is permanent" in result.output
