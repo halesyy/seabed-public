@@ -1,0 +1,6 @@
+{
+  "api_url": "https://seabed-api.jackhalestesting.xyz/api/v1",
+  "default_area_id": null,
+  "timeout_seconds": 30,
+  "token_env": "SEABED_TOKEN"
+}
