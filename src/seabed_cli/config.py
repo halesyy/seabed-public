@@ -6,7 +6,10 @@ from pathlib import Path
 
 from pydantic import BaseModel, ConfigDict, Field, HttpUrl
 
-DEFAULT_API_URL = "https://seabed-api.jackhalestesting.xyz/api/v1"
+# New installs point at the canonical host. Existing configs that still hold
+# seabed-api.jackhalestesting.xyz keep working: that hostname is a permanent
+# alias on the API, never a redirect, precisely so pinned clients do not break.
+DEFAULT_API_URL = "https://seabed-api.jackhales.com/api/v1"
 
 
 class SeabedConfig(BaseModel):

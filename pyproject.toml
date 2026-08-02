@@ -34,8 +34,8 @@ dev = [
 seabed = "seabed_cli.cli:main"
 
 [project.urls]
-Homepage = "https://seabed.jackhalestesting.xyz"
-Documentation = "https://seabed.jackhalestesting.xyz/api"
+Homepage = "https://seabed.jackhales.com"
+Documentation = "https://seabed.jackhales.com/api"
 Repository = "https://github.com/Halesyy/seabed-public"
 
 [tool.setuptools.packages.find]
