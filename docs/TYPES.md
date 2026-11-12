@@ -8,7 +8,7 @@ Area (a project)
     └── Block[] (ordered primitive content)
 ```
 
-The canonical machine-readable guide is [`GET /connect/types`](https://seabed-api.jackhalestesting.xyz/connect/types), and the complete request/response schema is in [OpenAPI](https://seabed-api.jackhalestesting.xyz/openapi.json).
+The canonical machine-readable guide is [`GET /connect/types`](https://seabed-api.jackhales.com/connect/types), and the complete request/response schema is in [OpenAPI](https://seabed-api.jackhales.com/openapi.json).
 
 ## Areas
 

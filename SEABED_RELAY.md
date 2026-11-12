@@ -10,7 +10,7 @@ Check for `SEABED_TOKEN` in the runtime environment or its secret manager. Never
 
 If the key is missing, tell the user:
 
-> Open https://seabed.jackhalestesting.xyz/register?intent=agent&source=seabed-public, create or log into your account, and complete the API-key step. Add the one-time key to this runtime as the `SEABED_TOKEN` secret, then tell me it is ready.
+> Open https://seabed.jackhales.com/register?intent=agent&source=seabed-public, create or log into your account, and complete the API-key step. Add the one-time key to this runtime as the `SEABED_TOKEN` secret, then tell me it is ready.
 
 Wait for the user to confirm the secret has been configured. Do not substitute another credential or create a key on their behalf.
 
@@ -28,10 +28,10 @@ If the project already has a command framework or another language, inspect this
 
 Contract discovery:
 
-- API base: `https://seabed-api.jackhalestesting.xyz/api/v1`
-- Onboarding JSON: `https://seabed-api.jackhalestesting.xyz/connect`
-- Types: `https://seabed-api.jackhalestesting.xyz/connect/types`
-- OpenAPI: `https://seabed-api.jackhalestesting.xyz/openapi.json`
+- API base: `https://seabed-api.jackhales.com/api/v1`
+- Onboarding JSON: `https://seabed-api.jackhales.com/connect`
+- Types: `https://seabed-api.jackhales.com/connect/types`
+- OpenAPI: `https://seabed-api.jackhales.com/openapi.json`
 - Authentication: `Authorization: Bearer $SEABED_TOKEN`
 
 ## 3. Expose these intentions

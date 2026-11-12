@@ -1,6 +1,6 @@
 # Seabed Public
 
-A small, typed command-line interface for [Seabed](https://seabed.jackhalestesting.xyz). It gives people and agents a transparent way to list projects, read documents, search context, create content, and build their own interface over the Seabed Connect API.
+A small, typed command-line interface for [Seabed](https://seabed.jackhales.com). It gives people and agents a transparent way to list projects, read documents, search context, create content, and build their own interface over the Seabed Connect API.
 
 The code intentionally stays close to HTTP. Typer provides the command surface, Pydantic validates public response types, and the Python standard library performs requests. There is no hidden agent and no required SDK.
 
@@ -20,7 +20,7 @@ seabed doctor
 
 If you do not have a key, use the agent/CLI onboarding path:
 
-[Create a Seabed account and API key](https://seabed.jackhalestesting.xyz/register?intent=agent&source=seabed-public)
+[Create a Seabed account and API key](https://seabed.jackhales.com/register?intent=agent&source=seabed-public)
 
 The final onboarding step displays the raw key once. Put it into `SEABED_TOKEN` or your agent runtime's secret store; do not commit it or paste it into a prompt.
 
@@ -58,7 +58,7 @@ moved to another status.
 
 ```json
 {
-  "api_url": "https://seabed-api.jackhalestesting.xyz/api/v1",
+  "api_url": "https://seabed-api.jackhales.com/api/v1",
   "default_area_id": null,
   "timeout_seconds": 30,
   "token_env": "SEABED_TOKEN"
@@ -80,10 +80,10 @@ Do not replace the environment-variable sentence with the raw key.
 
 ## Public contracts
 
-- [Human API guide](https://seabed.jackhalestesting.xyz/api)
-- [Onboarding JSON](https://seabed-api.jackhalestesting.xyz/connect)
-- [Type guide](https://seabed-api.jackhalestesting.xyz/connect/types)
-- [OpenAPI](https://seabed-api.jackhalestesting.xyz/openapi.json)
+- [Human API guide](https://seabed.jackhales.com/api)
+- [Onboarding JSON](https://seabed-api.jackhales.com/connect)
+- [Type guide](https://seabed-api.jackhales.com/connect/types)
+- [OpenAPI](https://seabed-api.jackhales.com/openapi.json)
 - [Type modelling notes](docs/TYPES.md)
 
 ## Development
