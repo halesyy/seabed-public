@@ -37,6 +37,7 @@ seabed docs --area AREA_ID           list root documents
 seabed docs --area AREA_ID --recursive
 seabed read DOCUMENT_ID              read one document
 seabed create "Field notes" --area AREA_ID
+seabed status DOCUMENT_ID completed
 seabed update DOCUMENT_ID --status in-progress
 seabed append DOCUMENT_ID --text "New context"
 seabed search "deployment"
@@ -44,6 +45,12 @@ seabed delete DOCUMENT_ID --yes
 ```
 
 Every data command prints JSON. This makes the CLI useful on its own and easy for another command, agent, blog generator, search index, or automation to compose.
+
+`status` works for every document kind, including folders. Accepted values are
+`not-started`, `in-progress`, `blocked`, `completed`, and `cancelled`; the generic
+`update --status` form remains available when changing status alongside other fields.
+Seabed records `dates.completedDateUnix` on completion and clears it when a task is
+moved to another status.
 
 ## Local JSON config
 

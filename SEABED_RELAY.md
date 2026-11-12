@@ -47,6 +47,7 @@ Use names that fit the host system, while preserving these operations:
 | Read a document | `GET /documents/{documentId}` | `seabed read` |
 | Create a document | `POST /areas/{areaId}/documents` | `seabed create` |
 | Update metadata/body | `PATCH /documents/{documentId}` | `seabed update` |
+| Set document/folder status | `PATCH /documents/{documentId}` | `seabed status DOCUMENT_ID STATUS` |
 | Append content blocks | `POST /documents/{documentId}/blocks` | `seabed append` |
 | Search | `GET /search?query=...` | `seabed search` |
 | Delete a document | `DELETE /documents/{documentId}` | `seabed delete --yes` |
