@@ -8,7 +8,7 @@ Area (a project)
     └── Block[] (ordered primitive content)
 ```
 
-The canonical machine-readable guide is [`GET /connect/types`](https://seabed-api.jackhalestesting.xyz/connect/types), and the complete request/response schema is in [OpenAPI](https://seabed-api.jackhalestesting.xyz/openapi.json).
+The canonical machine-readable guide is [`GET /connect/types`](https://seabed-api.jackhales.com/connect/types), and the complete request/response schema is in [OpenAPI](https://seabed-api.jackhales.com/openapi.json).
 
 ## Areas
 
@@ -17,6 +17,12 @@ An area is the API name for a Seabed project. It has a stable `id`, user-scoped 
 ## Documents
 
 Documents include hierarchy (`parentDocumentId`, `path`, `depth`), plain `body` text, ordered `blocks`, tags, source and summary fields, presentation metadata, workflow status, value/ranking fields, dates, timestamps, and permissions.
+
+Workflow status applies to every document kind, including `folder`. The allowed values are
+`not-started`, `in-progress`, `blocked`, `completed`, and `cancelled`; use
+`seabed status DOCUMENT_ID STATUS` for a focused update or `seabed update --status` when
+changing it with other metadata. Seabed records `dates.completedDateUnix` when a document
+is completed and clears it when the document moves to another status.
 
 The Pydantic model in [`src/seabed_cli/models.py`](../src/seabed_cli/models.py) parses the complete public response while allowing future additive fields.
 
