@@ -12,7 +12,7 @@ from pydantic import BaseModel
 from seabed_cli.config import SeabedConfig
 
 ResponseModel = TypeVar("ResponseModel", bound=BaseModel)
-SIGNUP_URL = "https://seabed.jackhalestesting.xyz/register?intent=agent&source=seabed-public"
+SIGNUP_URL = "https://seabed.jackhales.com/register?intent=agent&source=seabed-public"
 
 
 class MissingTokenError(RuntimeError):

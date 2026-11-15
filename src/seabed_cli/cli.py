@@ -172,6 +172,21 @@ def update_document(
     _emit(response)
 
 
+@app.command("status")
+def set_document_status(
+    document_id: Annotated[str, typer.Argument(help="Document or folder ID.")],
+    status: Annotated[DocumentStatus, typer.Argument(help="New workflow status.")],
+) -> None:
+    """Set the workflow status of a document or folder."""
+    response = _client().request_model(
+        Document,
+        "PATCH",
+        f"/documents/{document_id}",
+        body={"status": status},
+    )
+    _emit(response)
+
+
 @app.command("append")
 def append_blocks(
     document_id: Annotated[str, typer.Argument(help="Document ID.")],
